@@ -15,8 +15,8 @@ class SecondCustomTableViewCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView! {
         didSet {
             contentView.layer.shadowOffset = CGSize(width: 3, height: 3)
-            contentView.layer.shadowOpacity = 1
-            contentView.layer.shadowRadius = 0.1
+            contentView.layer.shadowOpacity = 0.1
+            contentView.layer.shadowRadius = 0.5
         }
     }
     override func awakeFromNib() {

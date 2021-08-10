@@ -51,6 +51,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5129FDA926C12015006FD21E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				518132F726B948CF00974DAD /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5129FDAA26C12030006FD21E /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				518132F926B9490600974DAD /* DataView.swift */,
+				518132E526B9443100974DAD /* ViewController.swift */,
+				5129FDAB26C120B4006FD21E /* HomeScreenCells */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		5129FDAB26C120B4006FD21E /* HomeScreenCells */ = {
+			isa = PBXGroup;
+			children = (
+				514BD77C26BEBF2A00C20BED /* SecondCustomTableViewCell.xib */,
+				5114BED526BA6FA800C8BB24 /* CustomTableViewCell.xib */,
+				5114BED426BA6FA800C8BB24 /* CustomTableViewCell.swift */,
+				514BD77B26BEBF2A00C20BED /* SecondCustomTableViewCell.swift */,
+			);
+			path = HomeScreenCells;
+			sourceTree = "<group>";
+		};
 		518132D526B9443000974DAD = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +99,15 @@
 		518132E026B9443100974DAD /* OneStepTask */ = {
 			isa = PBXGroup;
 			children = (
+				5129FDAA26C12030006FD21E /* Home Screen */,
+				5129FDA926C12015006FD21E /* Model */,
 				518132E126B9443100974DAD /* AppDelegate.swift */,
 				518132E326B9443100974DAD /* SceneDelegate.swift */,
-				518132F726B948CF00974DAD /* DataModel.swift */,
-				518132F926B9490600974DAD /* DataView.swift */,
-				518132E526B9443100974DAD /* ViewController.swift */,
 				518132F526B948B400974DAD /* DataManager.swift */,
 				518132E726B9443100974DAD /* Main.storyboard */,
 				518132EA26B9443500974DAD /* Assets.xcassets */,
 				518132EC26B9443500974DAD /* LaunchScreen.storyboard */,
 				518132EF26B9443500974DAD /* Info.plist */,
-				5114BED426BA6FA800C8BB24 /* CustomTableViewCell.swift */,
-				5114BED526BA6FA800C8BB24 /* CustomTableViewCell.xib */,
-				514BD77B26BEBF2A00C20BED /* SecondCustomTableViewCell.swift */,
-				514BD77C26BEBF2A00C20BED /* SecondCustomTableViewCell.xib */,
 			);
 			path = OneStepTask;
 			sourceTree = "<group>";

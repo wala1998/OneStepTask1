@@ -8,11 +8,14 @@
 import UIKit
 
 class DataView: UIView {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    func reg(){
+    func initializeView(){
+        registerCells()
+        titleLabel.text = DataManager.shared.greetingLogic()
+    }
+    func registerCells(){
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "SecondCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondTableViewCell")
     }
@@ -20,7 +23,6 @@ class DataView: UIView {
 
 extension DataView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        reg()
         return 4
     }
     

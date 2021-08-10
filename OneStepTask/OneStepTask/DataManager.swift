@@ -8,7 +8,6 @@
 import Foundation
 class DataManager {
     static let shared = DataManager()
-    var heyName = "Hey"
     var greeting = ""
     func greetingLogic()->String {
             let date = NSDate()
